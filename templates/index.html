@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    body {
+            background: #4b84f5;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 50px;
+            margin-bottom: 50px;
+            /*text-shadow: 2px 2px 4px black;*/
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+        .container {
+            width: 30%;
+            border-radius: 10px;
+            background: #7ba5ec;
+            padding: 20px;
+            box-shadow: 2px 2px 4px black;
+            margin: auto;
+            animation: pulse 2s infinite;
+        }
+        @keyframes blink {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                box-shadow: 0 0 20px #2d3748;
+            }
+            50% {
+                box-shadow: 0 0 0 #2d3748;
+            }
+        }
+</style>
+<body>
+    <h1>Main page</h1>
+    <h3>This is small Flask server in docker :)</h3>
+    <a href="/hello"><h4>Some link to another page</h4></a> 
+</body>
+</html>
