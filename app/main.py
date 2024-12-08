@@ -1,7 +1,7 @@
 import flask
 from flask import request
 from flask import render_template
-
+import flask_sqlalchemy
 app = flask.Flask(__name__)
 
 @app.route('/')
