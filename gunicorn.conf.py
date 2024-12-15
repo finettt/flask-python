@@ -2,9 +2,9 @@ import multiprocessing
 import logging
 
 def pre_request(worker, req):
-    logging.info("%s: %s" % (req.method, req.path))
+    logging.info("[%s:%s] %s: %s" % (req.remote_addr[0], req.remote_addr[1], req.method, req.path))
     for k, v in req.headers:
-        logging.info("%s: %s" % (k, v))
+        logging.info("[%s:%s] %s: %s" % (req.remote_addr[0], req.remote_addr[1], k, v))
 
 bind = "127.0.0.1:8000"
 

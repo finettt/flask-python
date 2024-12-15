@@ -7,8 +7,8 @@
 <body>
     <h1>Hello</h1>
     <data></data>
-    {% for k, v in req.headers: %}
-        <div>{{logging.info("%s: %s" % (k, v))}}</div>
+    {% for field in request: %}
+        <div>{{field[0]}} : {{field[1]}}</div>
     {% endfor %}
 </body>
 </html>
