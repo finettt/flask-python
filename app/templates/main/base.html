@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/lib/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="page">
+        <header>{% include 'main/_header.html' %}</header>
+        {% block content %}{% endblock %}
+        <footer>{% include  'main/_footer.html' %}</footer>
+    </div>
+</body>
+</html>

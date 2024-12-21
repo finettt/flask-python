@@ -1,0 +1,12 @@
+body{
+    background: #212121;
+    color: #fff;
+}
+header{
+    overflow-x: hidden;
+    display: flex;
+    flex: 1 1 auto;
+}
+footer{
+    color: white;
+}
